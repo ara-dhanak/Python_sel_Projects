@@ -1,0 +1,25 @@
+import random
+
+print("Hi! What is your name")
+name = input()
+print("Guess a number from 1 to 100 " + name )
+num1 = input()
+
+secretnum = random.randint(1,100)
+
+print('DEBUG: Secret number is' + str(secretnum))
+
+for guesscount in range(1, 5):
+    print("Guess the number")
+    guess = int(input())
+    if guess < secretnum:
+        print("Your Guess is too low")
+    elif guess > secretnum:
+        print("Your guess is too high")
+    else:
+        break
+if guess == secretnum:
+    print(' You gotacha ' + name + ' ! You guessed it right in ' + str(guesscount) + ' times. ')
+else:
+    print('It is a secret number' + str(secretnum) )
+
