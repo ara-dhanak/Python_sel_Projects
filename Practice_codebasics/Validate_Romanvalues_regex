@@ -1,0 +1,9 @@
+# A single line of input containing a string of Roman characters.
+
+#IP - CDXXI OP- True
+
+import re
+
+regex = r"^M{0,3} (D?C{0,3}C(D|M)) (L?X{0,3}X(L|C) (V?I{0,3}I(V|X))$  "
+
+print(str(bool(re.match(regex, 'CDXXI'))))

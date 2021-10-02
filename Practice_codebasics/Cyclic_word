@@ -1,0 +1,25 @@
+#input = "He is a good boy"
+#output = "boy good a is he"
+
+def rev(input):
+   x = input.split(" ")
+   reverse = x[:: -1]
+   e_str= " "
+   print(e_str.join(reverse))
+   rev(input)
+
+
+
+ #or
+
+ #input = catar pos = 2, arcat and tarac
+
+pos = 2
+string = "catar"
+
+print(string[pos:] + string[:pos]) #For left to right rotation
+print(string[-pos:]+ [:-pos]) #For right to left rot
+
+
+
+

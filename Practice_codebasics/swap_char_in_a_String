@@ -1,0 +1,19 @@
+#Swap Upper to lower and lower to upper
+
+def swap_case(s):
+    print(s)
+    for i in range(len(s)):
+        if s[i].isupper() == True:
+            final = s[i].lower()
+            print(final, end = "")
+        else:
+            final = s[i].upper()
+            print(final, end = "")
+    
+    
+    return final
+
+if __name__ == '__main__':
+    s = 'HackerRank.com presents "Pythonist 2".'
+    result = swap_case(s)
+    print(result)

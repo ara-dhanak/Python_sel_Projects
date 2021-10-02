@@ -1,0 +1,27 @@
+
+#IP = arad kha dan ae 
+#OP = Arad Kha Dan Ae
+
+def solve(st):
+   
+    cap_string = ""
+    s = st.split(" ")
+    empty_l = []
+    for i in range(len(s)):  
+        f_letter = s[i].capitalize()
+        empty_l.append(f_letter)
+        cap_string = " ".join(empty_l)    
+    return cap_string
+cap = solve("Arad kha dan ae") #Function returned value is stored in a variable
+print(cap)
+
+#or
+
+str = "arad kha dan ae"
+s = str.split(" ")
+empty_l = []
+for i in range(len(s)):
+    f_letter = s[i].capitalize()
+    empty_l.append(f_letter)
+print(" ".join(empty_l))
+

@@ -1,0 +1,17 @@
+ # Add individual elements in the int format eg: 342 -> 9
+ 
+n = 555
+def sum_of_n(n):
+    sum = 0
+    while n != 0:
+        sum = sum + (n % 10)
+        n = n//10
+    return sum
+
+tot = sum_of_n(n)
+final = 0
+i = 1
+while i < len(str(tot)):
+    tot = sum_of_n(tot)
+    
+#op-6
